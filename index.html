@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.jpg">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./output.css" />
+
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
+
+
+    <title>PortFolio</title>
+</head>
+
+<body>
+
+
+    <div class="full-container max-w-[1600px] w-[100%] mx-auto p-6 lg:px-[8rem] xl:px-[12rem] my-0">
+
+
+        <!-- navber section -->
+
+        <nav
+            class="gradient backdrop-blur-sm bg-white/20 max-md:w-full max-md:top-0 max-md:rounded-none fixed md:w-[80%] lg:w-[72%] z-50 top-8 place-self-center rounded-full border  border-gray-300 shadow-xl nav">
+            <div class="container mx-auto w-full">
+                <div class="wrapper w-full flex justify-between items-center py-4 p-6">
+
+                    <!-- Logo -->
+                    <div class="relative">
+
+                        <h1 class="font-bold text-xl oswald tracking-tight"> Saroj</h1>
+                        <div class="h-[6px] aspect-square rounded-full bg-black absolute -right-2 bottom-2 md:hidden">
+                        </div>
+                    </div>
+
+                    <!-- Desktop Menu -->
+                    <ul class="hidden md:flex items-center justify-center gap-x-10 manrope font-semibold">
+                        <li><a href="#home" class="hover:text-blue-600 ">Home</a></li>
+                        <li><a href="#skill" class="hover:text-blue-600">Skills</a></li>
+                        <li><a href="#project" class="hover:text-blue-600">Projects</a></li>
+                        <li><a href="#about" class="hover:text-blue-600">About Me</a></li>
+                    </ul>
+
+                    <!-- Contact Button -->
+                    <a href="./contact.html" target="_blank"
+                        class="hidden md:inline-block px-4 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-900">
+                        Contact Me
+                    </a>
+
+                    <!-- Hamburger Button (Mobile) -->
+                    <button id="menu-btn" class="md:hidden  text-gray-800 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="menu" class="hidden md:hidden bg-white shadow-md">
+                <ul class="flex flex-col space-y-4 px-6 py-4">
+                    <li><a href="#home" class="block hover:text-blue-600">Home</a></li>
+                    <li><a href="#skill" class="block hover:text-blue-600">Skills</a></li>
+                    <li><a href="#project" class="block hover:text-blue-600">Projects</a></li>
+                    <li><a href="#about" class="block hover:text-blue-600">About Me</a></li>
+                    <li>
+                        <a href="./contact.html"
+                            class="block w-full text-center px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-900">
+                            Contact Me
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
+        </nav>
+
+
+
+
+        <!-- Hero Section -->
+
+
+        <section class="w-full mt-[100px]" id="home">
+            <div class="w-full px-6 lg:px-20">
+
+                <!-- Full height, centered vertically -->
+                <div
+                    class=" flex flex-col lg:flex-row items-center justify-center gap-10  lg:min-h-[90vh] text-center md:text-left ">
+
+                    <!-- Left Text -->
+                    <div class=" flex flex-col gap-6 items-center md:items-start">
+                        <h1 class="text-3xl md:text-4xl font-bold txt"><span>Hey, I am Saroj </span></h1>
+                        <h2 class="text-xl md:text-2xl font-semibold text-gray-700 txt"><span>I am a Software Developer
+                            </span></h2>
+                        <p class="text-lg md:text-xl leading-relaxed text-gray-800 max-w-lg txt"><span>
+                                Creative <span class="text-blue-600 font-bold">software developer</span>
+                                crafting efficient, scalable, and user-friendly solutions with a passion
+                                for problem-solving and modern technologies.</span>
+                        </p>
+
+                        <a href="https://www.linkedin.com/in/saroj-panrui-733513285"><button class="px-6 py-3 bg-blue-600 text-white text-lg rounded-lg
+          hover:bg-blue-900 transition duration-300 shadow-md">
+                                Get in Touch
+                            </button></a>
+                    </div>
+
+                    <!-- Right Image -->
+                    <div class="w-full lg:w-1/2 flex justify-center mt-[20px]">
+
+
+
+                        <span
+                            class="h-[250px] sm:h-[280px] md:h-[300px] lg:h-[300px] xl:h-[350px] w-[250px] sm:w-[280px] md:w-[450px] lg:w-[350px] xl:w-[350px] rounded-2xl overflow-hidden">
+
+
+
+                            <img src="./assets/myphoto.jpg" alt="Saroj Profile"
+                                class="w-full h-full  shadow-2xl transition duration-300 ease-in-out  hover:scale-[1.1]" />
+                        </span>
+
+
+                    </div>
+
+
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- skills section -->
+        <div id="skill"></div>
+
+        <section class="w-full " id="skills">
+            <div class="container mx-auto px-4 ">
+
+                <!-- Title -->
+                <h1 class="text-center font-bold text-3xl md:text-4xl mt-[50px] text-blue-600">
+                    Skills
+                </h1>
+
+                <!-- Wrapper Grid -->
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-x-6 gap-y-8 mt-10 justify-items-center">
+
+
+                    <!-- Java -->
+                    <a href="https://drive.google.com/file/d/1kztWF3CxClAlKKbUcJj26GdbsksB3OG5/view?usp=drive_link"
+                        target="_blank">
+                        <div
+                            class="h-[80px] w-[80px] group rounded-2xl border border-gray-100 shadow-2xl flex flex-col items-center justify-center relative p-4 cursor-pointer">
+                            <img src="/assets/java.svg" alt="Java Logo" class="h-full w-full place-self-center">
+                            <span
+                                class="mt-2 opacity-0 scale-75 group-hover:opacity-100 group-hover:scale-100 text-gray-800 font-semibold text-sm text-center absolute -top-8 left-1/2 -translate-x-1/2 transition-all duration-300 ease-in-out">
+                                Java
+                            </span>
+                        </div>
+                    </a>
+
+
+                    <!--Node-->
+                    <a href="https://drive.google.com/file/d/1uRy_zA40BvcyU6SzPBx1eTPgrMqxGbyx/view?usp=drive_link"
+                        target="_blank">
+                        <div
+                            class="h-[80px] w-[80px] group rounded-2xl border border-gray-100 shadow-2xl flex flex-col items-center justify-center relative p-4 cursor-pointer">
+                            <img src="/assets/node.svg" alt="Java Logo" class="h-full w-full place-self-center">
+                            <span
+                                class="mt-2 opacity-0 scale-75 group-hover:opacity-100 group-hover:scale-100 text-gray-800 font-semibold text-sm text-center absolute -top-8 left-1/2 -translate-x-1/2 transition-all duration-300 ease-in-out">
+                                Node
+                            </span>
+                        </div>
+                    </a>
+
+                    <!-- C Programming -->
+                    <div
+                        class="h-[80px] w-[80px] group rounded-2xl border border-gray-100 shadow-2xl flex flex-col items-center justify-center relative p-4 cursor-pointer">
+                        <img src="/assets/c.svg" alt="Java Logo" class="h-full w-full place-self-center">
+                        <span
+                            class="mt-2 opacity-0 scale-75 group-hover:opacity-100 group-hover:scale-100 text-gray-800 font-semibold text-sm text-center absolute -top-8 left-1/2 -translate-x-1/2 transition-all duration-300 ease-in-out">
+                            C
+                        </span>
+                    </div>
+
+                    <!-- Github -->
+                    <a href="https://drive.google.com/file/d/1uRy_zA40BvcyU6SzPBx1eTPgrMqxGbyx/view?usp=drive_link"
+                        target="_blank">
+
+                        <div
+                            class="h-[80px] w-[80px] group rounded-2xl border border-gray-100 shadow-2xl flex flex-col items-center justify-center relative p-4 cursor-pointer">
+                            <img src="/assets/github.svg" alt="Java Logo" class="h-full w-full place-self-center">
+                            <span
+                                class="mt-2 opacity-0 scale-75 group-hover:opacity-100 group-hover:scale-100 text-gray-800 font-semibold text-sm text-center absolute -top-8 left-1/2 -translate-x-1/2 transition-all duration-300 ease-in-out">
+                                Github
+                            </span>
+                        </div>
+                    </a>
+
+                    <!-- MongoDB -->
+                    <a href="https://drive.google.com/file/d/1uRy_zA40BvcyU6SzPBx1eTPgrMqxGbyx/view?usp=drive_link"
+                        target="_blank">
+
+                        <div
+                            class="h-[80px] w-[80px] group rounded-2xl border border-gray-100 shadow-2xl flex flex-col items-center justify-center relative p-4 cursor-pointer">
+                            <img src="/assets/mongo.svg" alt="Java Logo" class="h-full w-full place-self-center">
+                            <span
+                                class="mt-2 opacity-0 scale-75 group-hover:opacity-100 group-hover:scale-100 text-gray-800 font-semibold text-sm text-center absolute -top-8 left-1/2 -translate-x-1/2 transition-all duration-300 ease-in-out">
+                                MongoDB
+                            </span>
+                        </div>
+                    </a>
+
+                    <!-- python -->
+                    <a href="https://drive.google.com/file/d/1K5PBYPlMTPkwnuHZNkcUnA3-LpUV1ID3/view?usp=drive_link"
+                        target="_blank">
+                        <div
+                            class="h-[80px] w-[80px] group rounded-2xl border border-gray-100 shadow-2xl flex flex-col items-center justify-center relative p-4 cursor-pointer">
+                            <img src="/assets/python.svg" alt="Java Logo" class="h-full w-full place-self-center">
+                            <span
+                                class="mt-2 opacity-0 scale-75 group-hover:opacity-100 group-hover:scale-100 text-gray-800 font-semibold text-sm text-center absolute -top-8 left-1/2 -translate-x-1/2 transition-all duration-300 ease-in-out">
+                                python
+                            </span>
+                        </div>
+                    </a>
+
+                    <!-- Express -->
+                    <a href="https://drive.google.com/file/d/1uRy_zA40BvcyU6SzPBx1eTPgrMqxGbyx/view?usp=drive_link"
+                        target="_blank">
+
+                        <div
+                            class="h-[80px] w-[80px] group rounded-2xl border border-gray-100 shadow-2xl flex flex-col items-center justify-center relative p-4 cursor-pointer">
+                            <img src="/assets/express.svg" alt="Java Logo" class="h-full w-full place-self-center">
+                            <span
+                                class="mt-2 opacity-0 scale-75 group-hover:opacity-100 group-hover:scale-100 text-gray-800 font-semibold text-sm text-center absolute -top-8 left-1/2 -translate-x-1/2 transition-all duration-300 ease-in-out">
+                                Express
+                            </span>
+                        </div>
+                    </a>
+
+                    <!-- git -->
+                    <div
+                        class="h-[80px] w-[80px] group rounded-2xl border border-gray-100 shadow-2xl flex flex-col items-center justify-center relative p-4 cursor-pointer">
+                        <img src="/assets/git.svg" alt="Java Logo" class="h-full w-full place-self-center">
+                        <span
+                            class="mt-2 opacity-0 scale-75 group-hover:opacity-100 group-hover:scale-100 text-gray-800 font-semibold text-sm text-center absolute -top-8 left-1/2 -translate-x-1/2 transition-all duration-300 ease-in-out">
+                            git
+                        </span>
+                    </div>
+
+                    <!-- sql -->
+                    <div
+                        class="h-[80px] w-[80px] group rounded-2xl border border-gray-100 shadow-2xl flex flex-col items-center justify-center relative p-4 cursor-pointer">
+                        <img src="/assets/sql.svg" alt="Java Logo" class="h-full w-full place-self-center">
+                        <span
+                            class="mt-2 opacity-0 scale-75 group-hover:opacity-100 group-hover:scale-100 text-gray-800 font-semibold text-sm text-center absolute -top-8 left-1/2 -translate-x-1/2 transition-all duration-300 ease-in-out">
+                            Mysql
+                        </span>
+                    </div>
+
+                    <!-- React -->
+                    <a href="https://drive.google.com/file/d/1uRy_zA40BvcyU6SzPBx1eTPgrMqxGbyx/view?usp=drive_link"
+                        target="_blank">
+
+                        <div
+                            class="h-[80px] w-[80px] group rounded-2xl border border-gray-100 shadow-2xl flex flex-col items-center justify-center relative p-4 cursor-pointer">
+                            <img src="/assets/react.svg" alt="Java Logo" class="h-full w-full place-self-center">
+                            <span
+                                class="mt-2 opacity-0 scale-75 group-hover:opacity-100 group-hover:scale-100 text-gray-800 font-semibold text-sm text-center absolute -top-8 left-1/2 -translate-x-1/2 transition-all duration-300 ease-in-out">
+                                React
+                            </span>
+                        </div>
+                    </a>
+
+                    <!-- tailwind -->
+                    <div
+                        class="h-[80px] w-[80px] group rounded-2xl border border-gray-100 shadow-2xl flex flex-col items-center justify-center relative p-4 cursor-pointer">
+                        <img src="/assets/tailwind.svg" alt="Java Logo" class="h-full w-full place-self-center">
+                        <span
+                            class="mt-2 opacity-0 scale-75 group-hover:opacity-100 group-hover:scale-100 text-gray-800 font-semibold text-sm text-center absolute -top-8 left-1/2 -translate-x-1/2 transition-all duration-300 ease-in-out">
+                            Tailwind
+                        </span>
+                    </div>
+
+                    <!-- JavaScript -->
+                    <a href="https://drive.google.com/file/d/1Ol_ptYAtNwr3oE-JfbQR6ON_wVR9fa1f/view?usp=sharing"
+                        target="_blank">
+                        <div
+                            class="h-[80px] w-[80px] group rounded-2xl border border-gray-100 shadow-2xl flex flex-col items-center justify-center relative p-4 cursor-pointer">
+                            <img src="/assets/js.svg" alt="Java Logo" class="h-full w-full place-self-center">
+                            <span
+                                class="mt-2 opacity-0 scale-75 group-hover:opacity-100 group-hover:scale-100 text-gray-800 font-semibold text-sm text-center absolute -top-8 left-1/2 -translate-x-1/2 transition-all duration-300 ease-in-out">
+                                JavaScript
+                            </span>
+                        </div>
+                    </a>
+
+
+                    <!-- css -->
+                    <a href="https://drive.google.com/file/d/1Ol_ptYAtNwr3oE-JfbQR6ON_wVR9fa1f/view?usp=sharing"
+                        target="_blank">
+
+                        <div
+                            class="h-[80px] w-[80px] group rounded-2xl border border-gray-100 shadow-2xl flex flex-col items-center justify-center relative p-4 cursor-pointer">
+                            <img src="/assets/css.svg" alt="Java Logo" class="h-full w-full place-self-center">
+                            <span
+                                class="mt-2 opacity-0 scale-75 group-hover:opacity-100 group-hover:scale-100 text-gray-800 font-semibold text-sm text-center absolute -top-8 left-1/2 -translate-x-1/2 transition-all duration-300 ease-in-out">
+                                css
+                            </span>
+                        </div>
+                    </a>
+
+                    <!-- html -->
+                    <a href="https://drive.google.com/file/d/1Ol_ptYAtNwr3oE-JfbQR6ON_wVR9fa1f/view?usp=sharing"
+                        target="_blank">
+
+                        <div
+                            class="h-[80px] w-[80px] group rounded-2xl border border-gray-100 shadow-2xl flex flex-col items-center justify-center relative p-4 cursor-pointer">
+                            <img src="/assets/html.svg" alt="Java Logo" class="h-full w-full place-self-center">
+                            <span
+                                class="mt-2 opacity-0 scale-75 group-hover:opacity-100 group-hover:scale-100 text-gray-800 font-semibold text-sm text-center absolute -top-8 left-1/2 -translate-x-1/2 transition-all duration-300 ease-in-out">
+                                HTML
+                            </span>
+                        </div>
+                    </a>
+
+                    <!-- vscode -->
+                    <div
+                        class="h-[80px] w-[80px] group rounded-2xl border border-gray-100 shadow-2xl flex flex-col items-center justify-center relative p-4 cursor-pointer">
+                        <img src="/assets/vscode-original-logo.svg" alt="Java Logo"
+                            class="h-full w-full place-self-center">
+                        <span
+                            class="mt-2 opacity-0 scale-75 group-hover:opacity-100 group-hover:scale-100 text-gray-800 font-semibold text-sm text-center absolute -top-8 left-1/2 -translate-x-1/2 transition-all duration-300 ease-in-out">
+                            vscode
+                        </span>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- projects section -->
+
+
+        <div id="project"></div>
+
+        <section class="w-full py-5">
+            <div class="container mx-auto ">
+                <h1 class="p font-bold text-4xl text-blue-600 text-center mt-[60px] mb-[20px]">
+                    Projects
+                </h1>
+
+                <!-- Slider Wrapper -->
+                <div class="relative w-full overflow-hidden">
+
+                    <!-- Slide Container -->
+                    <div id="slider" class="flex transition-transform duration-500 ease-in-out pb-[4rem]">
+
+                        <!-- BookStore -->
+                        <a href="https://github.com/sarojpanrui/BookStoreApp" target="_blank"
+                            class="min-w-full flex justify-center">
+                            <div
+                                class="h-[80%] w-[400px] p-3 flex flex-col gap-5 rounded-2xl border border-gray-300 shadow-2xl/20  cursor-pointer">
+                                <div class="p-3 rounded-2xl border border-gray-300 overflow-hidden">
+                                    <img src="/assets/Banner.png" alt=""
+                                        class="transition duration-300 ease-in-out  hover:scale-[1.05]">
+                                </div>
+                                <div class="p-10">
+                                    <h1 class="a text-center font-bold text-2xl">BooKStore App</h1>
+                                    <p class="m mt-[10px] text-center">Developed a web-based BookStore application using
+                                        the MERN stack, allowing
+                                        readers to
+                                        read free and paid books from the site.</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- CodeIDE -->
+                        <a href="https://github.com/sarojpanrui/codeIDE" class="min-w-full flex justify-center"
+                            target="_blank">
+                            <div
+                                class="h-[80%] w-[400px] p-3 flex flex-col gap-5 rounded-2xl border border-gray-300 shadow-2xl/20 overflow-hidden cursor-pointer">
+                                <div class="p-3 rounded-2xl border border-gray-300 ">
+                                    <img src="/assets/codeE.png" alt=""
+                                        class="transition duration-300 ease-in-out  hover:scale-[1.05]">
+                                </div>
+                                <div class="p-10">
+                                    <h1 class="a text-center font-bold text-2xl ">codeIDE</h1>
+                                    <p class="m mt-[10px] text-center">codeIDE is a full-stack web-based IDE that
+                                        supports multiple programming
+                                        languages,
+                                        allowing users to write, compile, and run code in real-time within the browser.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- Docify -->
+                        <a href="https://github.com/sarojpanrui/Docify-App" class="min-w-full flex justify-center"
+                            target="_blank">
+                            <div
+                                class="h-[80%] w-[400px] p-3 flex flex-col gap-5 rounded-2xl border border-gray-300 shadow-2xl/20 overflow-hidden cursor-pointer">
+                                <div class="p-3 rounded-2xl border border-gray-300 ">
+                                    <img src="/assets/doc.webp" alt=""
+                                        class="transition duration-300 ease-in-out  hover:scale-[1.03] rounded-2xl">
+                                </div>
+                                <div class="p-10">
+                                    <h1 class="a text-center font-bold text-2xl">Docify App</h1>
+                                    <p class="mt-[10px] text-center">DocifyApp is a MERN stack web application that
+                                        allows users to log in, create,
+                                        save,
+                                        and delete documents securely using Cloudinary.</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- Weather App -->
+                        <a href="https://github.com/sarojpanrui/WeatherappReact" class="min-w-full flex justify-center"
+                            target="_blank">
+                            <div
+                                class="h-[90%] w-[400px] p-3 flex flex-col gap-5 rounded-2xl border border-gray-300 shadow-2xl/20 overflow-hidden cursor-pointer">
+                                <div class="p-3 rounded-2xl border border-gray-300 ">
+                                    <img src="/assets/weather.png" alt=""
+                                        class="transition duration-300 ease-in-out  hover:scale-[1.03] rounded-2xl">
+                                </div>
+                                <div class="p-10">
+                                    <h1 class="a text-center font-bold text-2xl">Weather App</h1>
+                                    <p class="mt-[10px] text-center">Built a weather application with React, using
+                                        OpenWeather API to fetch real-time
+                                        data. Focused on responsive UI using Material-UI for optimal cross-device user
+                                        experience.</p>
+
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- GitHub Finder -->
+                        <a href="https://github.com/sarojpanrui/Github-Finder" class="min-w-full flex justify-center"
+                            target="_blank">
+                            <div
+                                class="h-[80%] w-[400px] p-3 flex flex-col gap-5 rounded-2xl border border-gray-300 shadow-2xl/20 overflow-hidden cursor-pointer">
+                                <div class="p-3 rounded-2xl border border-gray-300 flex justify-center align-middle ">
+                                    <img src="/assets/gitP.jpg" alt=""
+                                        class="transition duration-300 ease-in-out  hover:scale-[1.03] rounded-2xl">
+                                </div>
+                                <div class="p-10">
+                                    <h1 class="a text-center font-bold text-2xl">Github Finder</h1>
+                                    <p class="text-center mt-[10px]">A web app built with HTML, CSS, and JavaScript that
+                                        finds and displays GitHub
+                                        user
+                                        accounts using the GitHub API.</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- Airbnb Clone -->
+                        <a href="https://github.com/sarojpanrui/AirbnbClone" class="min-w-full flex justify-center"
+                            target="_blank">
+                            <div
+                                class="h-[85%] w-[400px] p-3 flex flex-col gap-5 rounded-2xl border border-gray-300 shadow-2xl/20  cursor-pointer">
+                                <div class="p-3 rounded-2xl border border-gray-300 overflow-hidden">
+                                    <img src="/assets/airbnb.jpg" alt=""
+                                        class="w-full h-full  shadow-2xl transition duration-300 ease-in-out  hover:scale-[1.05] rounded-2xl">
+                                </div>
+                                <div class="p-10">
+                                    <h1 class="a text-center font-bold text-2xl">Airbnb Clone</h1>
+                                    <p class="mt-[10px] text-center">A full-stack Airbnb clone with user authentication,
+                                        property listings, search
+                                        filters, booking calendar, payments, reviews, wishlists, photo uploads, admin
+                                        dashboard, responsive UI, real-time notifications, secure APIs, and scalable
+                                        cloud
+                                        deployment.</p>
+                                </div>
+                            </div>
+                        </a>
+
+
+
+                    </div>
+
+                    <!-- Navigation Buttons -->
+                    <button id="prev"
+                        class="absolute top-1/2 left-3 -translate-y-1/2 bg-blue-600 text-white p-3 rounded-full hover:bg-blue-800 cursor-pointer">
+                        < </button>
+
+                            <button id="next"
+                                class="absolute top-1/2 right-3 -translate-y-1/2 bg-blue-600 text-white p-3 rounded-full hover:bg-blue-800 cursor-pointer">
+                                >
+                            </button>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+        <!-- about me -->
+        <div id="about"></div>
+
+        <section class="w-full py-16" id="about">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col lg:flex-row items-center justify-center gap-12">
+
+                    <!-- Image -->
+                    <div class="w-full lg:w-1/2 flex justify-center mt-[20px]">
+                        <span
+                            class="h-[250px] sm:h-[280px] md:h-[300px] lg:h-[300px] xl:h-[350px] w-[250px] sm:w-[280px] md:w-[300px] lg:w-[300px] xl:w-[350px] rounded-full overflow-hidden">
+                            <img src="./assets/linkdin_profile(yellow bg).png" alt="Saroj Profile"
+                                class="w-full h-full rounded-full shadow-2xl transition duration-300 ease-in-out  hover:scale-[1.08]" />
+                        </span>
+                    </div>
+
+                    <!-- Text -->
+                    <div class="w-full lg:w-1/2 text-center lg:text-left flex flex-col justify-center">
+
+
+                        <h1 class="font-bold text-3xl md:text-4xl lg:text-5xl">About Me</h1>
+                        <p class="mt-4 text-gray-700 text-base sm:text-lg lg:text-lg leading-relaxed txt">
+
+                            As a 4th year B.Tech Computer Science student with a CGPA above 9, I am focused on
+                            building
+                            a strong foundation in both academics and practical skills. I specialize in Data
+                            Structures
+                            and Algorithms using Java, alongside developing full-stack applications with the MERN
+                            stack.
+
+                        </p>
+
+
+                        <h1 class="font-bold text-3xl md:text-4xl lg:text-5xl mt-[8px]">Education</h1>
+                        <p class="mt-4 text-gray-700 text-base sm:text-lg lg:text-lg leading-relaxed txt">
+
+                            Bachelor of Technology (B.Tech) in Computer Science
+                            Haldia Institute of Technology — 2022 to 2026
+
+                            Higher Secondary Education (Class XII)
+                            Itachuna Srinarayan Institution — 2022
+                            Percentage: 93.2%
+
+                            Secondary Education (Class X)
+                            Itachuna Srinarayan Institution — 2020
+                            Percentage: 92.5%
+
+                        </p>
+
+
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+    <!-- footer -->
+
+    <footer class="bg-blue-600 text-gray-100 py-10 mt-20">
+        <div class="container mx-auto px-6 text-center flex flex-col items-center gap-6">
+
+            <!-- Name -->
+            <div>
+                <h2 class="text-2xl font-bold">Saroj Panrui</h2>
+                <p class="text-sm text-gray-50">Software Developer | MERN & Java DSA</p>
+            </div>
+
+            <!-- Social Links -->
+            <div class="flex gap-8 justify-center text-white">
+                <a href="https://github.com/sarojpanrui" target="_blank" class="hover:scale-110 transition">
+                    <img src="./assets/githubIcon.svg" alt="GitHub" class="h-7 w-7">
+                </a>
+                <a href="https://www.linkedin.com/in/saroj-panrui-733513285" target="_blank"
+                    class="hover:scale-110 transition">
+                    <img src="./assets/linkedin.svg" alt="LinkedIn" class="h-7 w-7">
+                </a>
+                <a href="#" target="_blank" class="hover:scale-110 transition">
+                    <img src="./assets/Fb.svg" alt="Facebook" class="h-7 w-7">
+                </a>
+
+                <a href="https://drive.google.com/file/d/1qgGvcyQW240AuZcu6IvCxh2hj-86nEPn/view?usp=drive_link" target="_blank" class="hover:scale-110 transition">
+                    <img src="./assets/cv.svg" alt="Facebook" class="h-8 w-8">
+                </a>
+
+            </div>
+
+            <!-- Contact Button -->
+            <div>
+                <a href="./contact.html"
+                    class="px-6 py-2 bg-blue-50 text-blue-600 rounded-lg shadow-md hover:bg-blue-100 font-semibold transition">
+                    Contact Me
+                </a>
+            </div>
+
+            <!-- Copyright -->
+            <div class="mt-6 border-t border-gray-300 pt-4 text-sm text-gray-50">
+                © 2025 Saroj Panrui. All rights reserved.
+            </div>
+
+            <a href="#home"
+                class="fixed right-5 bottom-5 bg-amber-300 p-3 rounded-full shadow-lg hover:bg-amber-400 transition up">
+                <img src="/assets/arrow.svg" alt="Back to top" class="h-[20px] w-[20px]" />
+            </a>
+
+        </div>
+
+    </footer>
+
+
+    <script src="./app.js"></script>
+
+</body>
+
+</html>

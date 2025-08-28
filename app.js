@@ -45,17 +45,17 @@ document.addEventListener("scroll", () => {
 const nav = document.querySelector('.nav');  
 
 
-document.addEventListener('scroll', () => {
-  if (window.scrollY > 100) {
-    nav.style.display = "none";   
-  } else {
-    nav.style.display = "block";  
-  }
-});
+// document.addEventListener('scroll', () => {
+//   if (window.scrollY > 100) {
+//     nav.style.display = "none";   
+//   } else {
+//     nav.style.display = "block";  
+//   }
+// });
 
-document.addEventListener('click', () => {
-  nav.style.display = "block";
-});
+// document.addEventListener('click', () => {
+//   nav.style.display = "block";
+// });
 
 
 
